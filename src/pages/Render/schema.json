@@ -1,0 +1,1677 @@
+{
+  "version": "1.0.0",
+  "componentsMap": [{
+    "package": "@alifd/next",
+    "version": "1.25.23",
+    "exportName": "Input",
+    "main": "",
+    "destructuring": true,
+    "subName": "",
+    "componentName": "Input"
+  }, {
+    "package": "@alifd/next",
+    "version": "1.25.23",
+    "exportName": "Form",
+    "main": "",
+    "destructuring": true,
+    "subName": "Item",
+    "componentName": "Form.Item"
+  }, {
+    "package": "@alifd/next",
+    "version": "1.25.23",
+    "exportName": "Form",
+    "main": "",
+    "destructuring": true,
+    "subName": "Submit",
+    "componentName": "Form.Submit"
+  }, {
+    "package": "@alifd/next",
+    "version": "1.25.23",
+    "exportName": "Form",
+    "main": "",
+    "destructuring": true,
+    "subName": "",
+    "componentName": "Form"
+  }, {
+    "package": "@alifd/pro-layout",
+    "version": "1.0.1-beta.6",
+    "exportName": "P",
+    "main": "lib/index.js",
+    "destructuring": true,
+    "subName": "",
+    "componentName": "NextP"
+  }, {
+    "package": "@alifd/next",
+    "version": "1.25.23",
+    "exportName": "Dialog",
+    "main": "",
+    "destructuring": true,
+    "subName": "",
+    "componentName": "Dialog"
+  }, {
+    "package": "@alifd/next",
+    "version": "1.25.23",
+    "exportName": "Select",
+    "main": "",
+    "destructuring": true,
+    "subName": "",
+    "componentName": "Select"
+  }, {
+    "package": "@alifd/next",
+    "version": "1.25.23",
+    "exportName": "Search",
+    "main": "",
+    "destructuring": true,
+    "subName": "",
+    "componentName": "Search"
+  }, {
+    "package": "@alifd/pro-layout",
+    "version": "1.0.1-beta.6",
+    "exportName": "Col",
+    "main": "lib/index.js",
+    "destructuring": true,
+    "subName": "",
+    "componentName": "NextCol"
+  }, {
+    "package": "@alifd/pro-layout",
+    "version": "1.0.1-beta.6",
+    "exportName": "Row",
+    "main": "lib/index.js",
+    "destructuring": true,
+    "subName": "",
+    "componentName": "NextRow"
+  }, {
+    "package": "@alifd/pro-layout",
+    "version": "1.0.1-beta.6",
+    "exportName": "RowColContainer",
+    "main": "lib/index.js",
+    "destructuring": true,
+    "subName": "",
+    "componentName": "NextRowColContainer"
+  }, {
+    "package": "@alifd/next",
+    "version": "1.25.23",
+    "exportName": "Typography",
+    "main": "",
+    "destructuring": true,
+    "subName": "Text",
+    "componentName": "Typography.Text"
+  }, {
+    "package": "@alifd/next",
+    "version": "1.25.23",
+    "exportName": "Box",
+    "main": "",
+    "destructuring": true,
+    "subName": "",
+    "componentName": "Box"
+  }, {
+    "package": "@alifd/next",
+    "version": "1.25.23",
+    "exportName": "Tag",
+    "main": "",
+    "destructuring": true,
+    "componentName": "Tag"
+  }, {
+    "package": "NextTable",
+    "version": "{{version}}",
+    "exportName": "NextTable",
+    "main": "lib/index.js",
+    "subName": "",
+    "componentName": "NextTable"
+  }, {
+    "package": "@alifd/next",
+    "version": "1.25.23",
+    "exportName": "Pagination",
+    "main": "",
+    "destructuring": true,
+    "subName": "",
+    "componentName": "Pagination"
+  }, {
+    "package": "@alifd/pro-layout",
+    "version": "1.0.1-beta.6",
+    "exportName": "BlockCell",
+    "main": "lib/index.js",
+    "destructuring": true,
+    "subName": "",
+    "componentName": "NextBlockCell"
+  }, {
+    "package": "@alifd/pro-layout",
+    "version": "1.0.1-beta.6",
+    "exportName": "Block",
+    "main": "lib/index.js",
+    "destructuring": true,
+    "subName": "",
+    "componentName": "NextBlock"
+  }, {
+    "package": "@alifd/fusion-ui",
+    "version": "1.0.5",
+    "exportName": "ProTable",
+    "main": "lib/index.js",
+    "destructuring": true,
+    "subName": "",
+    "componentName": "ProTable"
+  }, {
+    "package": "@alifd/pro-layout",
+    "version": "1.0.1-beta.6",
+    "exportName": "PageHeader",
+    "main": "lib/index.js",
+    "destructuring": true,
+    "subName": "",
+    "componentName": "NextPageHeader"
+  }, {
+    "package": "@alifd/pro-layout",
+    "version": "1.0.1-beta.6",
+    "exportName": "Page",
+    "main": "lib/index.js",
+    "destructuring": true,
+    "componentName": "NextPage"
+  }, {
+    "devMode": "lowcode",
+    "componentName": "Page"
+  }],
+  "componentsTree": [{
+    "componentName": "Page",
+    "id": "node_dockcviv8fo1",
+    "props": {
+      "ref": "outerView",
+      "style": {
+        "height": "100%"
+      }
+    },
+    "fileName": "/",
+    "dataSource": {
+      "list": [{
+        "type": "fetch",
+        "isInit": true,
+        "options": {
+          "params": {
+            "type": "JSExpression",
+            "value": "{\"limit\":10}"
+          },
+          "method": "POST",
+          "isCors": true,
+          "timeout": 5000,
+          "headers": {
+            "Content-Type": "application/json; charset=utf-8"
+          },
+          "uri": "http://localhost/grpc/whale.account.proto.CompanyService/ListCompany"
+        },
+        "id": "info",
+        "dataHandler": {
+          "type": "JSFunction",
+          "value": "function(res) { \n  this.setState({\n    total:res.total\n  })\n  res.companies.map(e=>{\n    if (!e.status){\n      e.status =\"NORMAL\"\n    }\n  })\n\n  return res.companies }"
+        }
+      }]
+    },
+    "state": {
+      "text": {
+        "type": "JSExpression",
+        "value": "\"outer\""
+      },
+      "isShowCreateDialog": {
+        "type": "JSExpression",
+        "value": "false"
+      },
+      "isShowUpdateDialog": {
+        "type": "JSExpression",
+        "value": "false"
+      },
+      "currentRow": {
+        "type": "JSExpression",
+        "value": "{}"
+      },
+      "total": {
+        "type": "JSExpression",
+        "value": "0"
+      }
+    },
+    "css": "body {\n  font-size: 12px;\n}\n\n.button {\n  width: 100px;\n  color: #ff00ff\n}",
+    "lifeCycles": {},
+    "methods": {
+      "openShowUpdateDialog": {
+        "type": "JSFunction",
+        "value": "function openShowUpdateDialog(row) {\n  this.setState({\n    isShowUpdateDialog: true,\n    isShowCreateDialog: false,\n    currentRow: row\n  });\n}"
+      },
+      "closeShowUpdateDialog": {
+        "type": "JSFunction",
+        "value": "function closeShowUpdateDialog() {\n  this.setState({\n    isShowUpdateDialog: false,\n    currentRow: {}\n  });\n}"
+      },
+      "openShowCreateDialog": {
+        "type": "JSFunction",
+        "value": "function openShowCreateDialog() {\n  this.setState({\n    isShowCreateDialog: true,\n    isShowUpdateDialog: false\n  });\n}"
+      },
+      "closeShowCreateDialog": {
+        "type": "JSFunction",
+        "value": "function closeShowCreateDialog() {\n  this.setState({\n    isShowCreateDialog: false\n  });\n}"
+      },
+      "search": {
+        "type": "JSFunction",
+        "value": "function search(keyword) {\n  console.log(\"keyword:\", keyword);\n  this.dataSourceMap.info.load({\n    name: keyword || \"\"\n  }).then(data => {\n    this.setState({\n      info: data\n    });\n  });\n}"
+      },
+      "refetch": {
+        "type": "JSFunction",
+        "value": "function refetch(page) {\n  console.log(\"page:\", page);\n\n  if (!page) {\n    page = 1;\n  }\n\n  this.dataSourceMap.info.load({\n    offset: (page - 1) * 10\n  }).then(data => {\n    this.setState({\n      info: data\n    });\n  });\n}"
+      },
+      "onCreate": {
+        "type": "JSFunction",
+        "value": "function onCreate(value) {\n  console.log(value);\n  fetch('/grpc/whale.account.proto.CompanyService/Create', {\n    method: \"POST\",\n    headers: {\n      'Content-Type': 'application/json'\n    },\n    body: JSON.stringify({\n      \"name\": value.name,\n      \"slug\": value.slug,\n      \"type\": value.type,\n      \"phone\": value.phone\n    })\n  }).then(() => {\n    closeShowCreateDialog();\n    refetch();\n  });\n}"
+      },
+      "onUpdate": {
+        "type": "JSFunction",
+        "value": "function onUpdate(value) {\n  console.log(value);\n  fetch('/grpc/whale.account.proto.CompanyService/Update', {\n    method: \"POST\",\n    headers: {\n      'Content-Type': 'application/json'\n    },\n    body: JSON.stringify({ ...value\n    })\n  }).then(() => {\n    closeShowUpdateDialog();\n    refetch();\n  });\n}"
+      }
+    },
+    "originCode": "class LowcodeComponent extends Component {\n  state = {\n    \"text\": \"outer\",\n    \"isShowCreateDialog\": false,\n    \"isShowUpdateDialog\": false,\n    \"currentRow\":{},\n    \"total\":0\n  }\n  openShowUpdateDialog(row){\n    this.setState({\n      isShowUpdateDialog:true,\n      isShowCreateDialog: false,\n      currentRow: row\n    })\n  }\n  closeShowUpdateDialog() {\n    this.setState({\n      isShowUpdateDialog: false,\n      currentRow: {}\n    })\n  }\n  openShowCreateDialog() {\n    this.setState({\n      isShowCreateDialog: true,\n      isShowUpdateDialog: false,\n    })\n    \n  }\n  closeShowCreateDialog() {\n    this.setState({\n      isShowCreateDialog: false\n    })\n  }\n  search(keyword){\n    console.log(\"keyword:\", keyword)\n    this.dataSourceMap.info.load(\n      { name: keyword||\"\"}\n    ).then((data) => {\n      this.setState({\n        info: data\n      })\n    })\n  }\n  refetch(page){\n    console.log(\"page:\", page)\n    if (!page){\n      page=1\n    }\n    this.dataSourceMap.info.load(\n      { offset: (page-1)*10}\n      ).then((data) => {\n      this.setState({\n        info: data\n      })\n    })\n  }\n\tonCreate(value){\n    console.log(value)\n    fetch('/grpc/whale.account.proto.CompanyService/Create',{\n      method:\"POST\",\n      headers:{\n        'Content-Type':'application/json'       \n      },\n      body: JSON.stringify({\n        \"name\": value.name,\n        \"slug\": value.slug,\n        \"type\": value.type,\n        \"phone\": value.phone\n      })\n    }).then(()=>{\n      closeShowCreateDialog()\n      refetch()\n    })\n\t}\n\tonUpdate(value){\n    console.log(value)\n    fetch('/grpc/whale.account.proto.CompanyService/Update', {\n      method: \"POST\",\n      headers: {\n        'Content-Type': 'application/json'\n      },\n      body: JSON.stringify({\n        ...value\n      })\n    }).then(() => {\n      closeShowUpdateDialog()\n      refetch()\n    })\n\t}\n}",
+    "title": "",
+    "isLocked": false,
+    "condition": true,
+    "conditionGroup": "",
+    "children": [{
+      "componentName": "Dialog",
+      "id": "node_ocl1ooedq13a",
+      "props": {
+        "prefix": "next-",
+        "footerAlign": "right",
+        "title": "编辑公司",
+        "footer": false,
+        "footerActions": ["ok", "cancel"],
+        "closeable": "esc,close",
+        "hasMask": true,
+        "align": "cc cc",
+        "minMargin": 40,
+        "isAutoContainer": true,
+        "visible": {
+          "type": "JSExpression",
+          "value": "this.state.isShowUpdateDialog",
+          "mock": false
+        },
+        "style": {
+          "width": "600px"
+        },
+        "__events": {
+          "eventDataList": [{
+            "type": "componentEvent",
+            "name": "onCancel",
+            "relatedEventName": "closeShowUpdateDialog"
+          }, {
+            "type": "componentEvent",
+            "name": "onClose",
+            "relatedEventName": "closeShowUpdateDialog"
+          }],
+          "eventList": [{
+            "name": "onOk",
+            "disabled": false
+          }, {
+            "name": "onCancel",
+            "disabled": true
+          }, {
+            "name": "onClose",
+            "disabled": true
+          }]
+        },
+        "onCancel": {
+          "type": "JSFunction",
+          "value": "function(){this.closeShowUpdateDialog.apply(this,Array.prototype.slice.call(arguments).concat([])) }"
+        },
+        "onClose": {
+          "type": "JSFunction",
+          "value": "function(){this.closeShowUpdateDialog.apply(this,Array.prototype.slice.call(arguments).concat([])) }"
+        },
+        "closeMode": "close",
+        "key": "create_dialog",
+        "autoFocus": true
+      },
+      "title": "",
+      "isLocked": false,
+      "condition": {
+        "type": "JSExpression",
+        "value": "true",
+        "mock": true
+      },
+      "conditionGroup": "",
+      "children": [{
+        "componentName": "NextP",
+        "id": "node_ocl1ooedq13s",
+        "props": {
+          "wrap": false,
+          "type": "body2",
+          "verAlign": "middle",
+          "textSpacing": true,
+          "align": "left",
+          "full": true
+        },
+        "docId": "docl1ooedq1",
+        "title": "段落",
+        "isLocked": false,
+        "condition": true,
+        "conditionGroup": "",
+        "children": [{
+          "componentName": "Form",
+          "id": "node_ocl1ooedq13t",
+          "props": {
+            "labelCol": {
+              "span": 4
+            },
+            "wrapperCol": {
+              "span": 18
+            },
+            "labelAlign": "left",
+            "size": "medium",
+            "labelTextAlign": "left",
+            "device": "desktop",
+            "__events": {
+              "eventDataList": [],
+              "eventList": [{
+                "name": "saveField",
+                "disabled": false
+              }, {
+                "name": "onSubmit",
+                "disabled": false
+              }, {
+                "name": "onChange",
+                "disabled": true
+              }]
+            },
+            "field": {
+              "type": "JSExpression",
+              "value": ""
+            },
+            "value": {
+              "type": "JSExpression",
+              "value": "this.state.currentRow"
+            }
+          },
+          "docId": "docl1ooedq1",
+          "title": "",
+          "isLocked": false,
+          "condition": true,
+          "conditionGroup": "",
+          "children": [{
+            "componentName": "Form.Item",
+            "id": "node_ocl1ooedq14e",
+            "props": {
+              "label": "公司名称",
+              "size": "medium",
+              "labelAlign": "left",
+              "labelTextAlign": "left",
+              "device": "desktop",
+              "name": "name"
+            },
+            "docId": "docl1ooedq1",
+            "title": "表单项",
+            "isLocked": false,
+            "condition": true,
+            "conditionGroup": "",
+            "children": [{
+              "componentName": "Input",
+              "id": "node_ocl1ooedq14f",
+              "props": {
+                "hasBorder": true,
+                "size": "medium",
+                "autoComplete": "off",
+                "placeholder": "请输入",
+                "name": "name"
+              },
+              "docId": "docl1ooedq1",
+              "title": "",
+              "isLocked": false,
+              "condition": true,
+              "conditionGroup": ""
+            }]
+          }, {
+            "componentName": "Form.Item",
+            "id": "node_ocl1ooedq14r",
+            "props": {
+              "label": "公司别名",
+              "size": "medium",
+              "labelAlign": "left",
+              "labelTextAlign": "left",
+              "device": "desktop",
+              "name": "slug"
+            },
+            "docId": "docl1ooedq1",
+            "title": "表单项",
+            "isLocked": false,
+            "condition": true,
+            "conditionGroup": "",
+            "children": [{
+              "componentName": "Input",
+              "id": "node_ocl1ooedq14s",
+              "props": {
+                "hasBorder": true,
+                "size": "medium",
+                "autoComplete": "off",
+                "placeholder": "请输入",
+                "label": "",
+                "disabled": true,
+                "name": "slug"
+              },
+              "docId": "docl1ooedq1",
+              "title": "",
+              "isLocked": false,
+              "condition": true,
+              "conditionGroup": ""
+            }]
+          }, {
+            "componentName": "Form.Item",
+            "id": "node_ocl1oof83j7",
+            "props": {
+              "label": "公司类型",
+              "size": "medium",
+              "labelAlign": "left",
+              "labelTextAlign": "left",
+              "device": "desktop",
+              "name": "type"
+            },
+            "docId": "docl1oof83j",
+            "title": "表单项",
+            "isLocked": false,
+            "condition": true,
+            "conditionGroup": "",
+            "children": [{
+              "componentName": "Input",
+              "id": "node_ocl1oof83j8",
+              "props": {
+                "hasBorder": true,
+                "size": "medium",
+                "autoComplete": "off",
+                "placeholder": "请输入",
+                "state": "",
+                "disabled": true,
+                "readOnly": false,
+                "name": "type"
+              },
+              "docId": "docl1oof83j",
+              "title": "",
+              "isLocked": false,
+              "condition": true,
+              "conditionGroup": ""
+            }]
+          }, {
+            "componentName": "Form.Item",
+            "id": "node_ocl1otwatm7",
+            "props": {
+              "label": "联系方式",
+              "size": "medium",
+              "labelAlign": "left",
+              "labelTextAlign": "left",
+              "device": "desktop",
+              "name": "phone"
+            },
+            "docId": "docl1otwatm",
+            "title": "表单项",
+            "isLocked": false,
+            "condition": true,
+            "conditionGroup": "",
+            "children": [{
+              "componentName": "Input",
+              "id": "node_ocl1otwatm8",
+              "props": {
+                "hasBorder": true,
+                "size": "medium",
+                "autoComplete": "off",
+                "placeholder": "请输入",
+                "name": "phone"
+              },
+              "docId": "docl1otwatm",
+              "title": "",
+              "isLocked": false,
+              "condition": true,
+              "conditionGroup": ""
+            }]
+          }, {
+            "componentName": "Form.Item",
+            "id": "node_ocl1ooedq13y",
+            "props": {
+              "label": "\b",
+              "size": "medium",
+              "labelAlign": "left",
+              "labelTextAlign": "left",
+              "device": "desktop"
+            },
+            "docId": "docl1ooedq1",
+            "title": "",
+            "isLocked": false,
+            "condition": true,
+            "conditionGroup": "",
+            "children": [{
+              "componentName": "Form.Submit",
+              "id": "node_ocl1ooedq13z",
+              "props": {
+                "type": "secondary",
+                "validate": true,
+                "children": "提交",
+                "icon": "",
+                "size": "small",
+                "iconSize": "xxs",
+                "ghost": true,
+                "loading": false,
+                "text": false,
+                "warning": false,
+                "htmlType": "",
+                "className": "button",
+                "style": {
+                  "opacity": 1,
+                  "backgroundColor": "#320bff"
+                },
+                "__events": {
+                  "eventDataList": [{
+                    "type": "componentEvent",
+                    "name": "onClick",
+                    "relatedEventName": "onUpdate"
+                  }],
+                  "eventList": [{
+                    "name": "onClick",
+                    "description": "点击提交后触发\n@param {Object} value 数据\n@param {Object} errors 错误数据\n@param {class} field 实例",
+                    "disabled": true
+                  }, {
+                    "name": "onMouseUp",
+                    "disabled": false
+                  }]
+                },
+                "onClick": {
+                  "type": "JSFunction",
+                  "value": "function(){this.onUpdate.apply(this,Array.prototype.slice.call(arguments).concat([])) }"
+                }
+              },
+              "docId": "docl1ooedq1",
+              "title": "",
+              "isLocked": false,
+              "condition": true,
+              "conditionGroup": ""
+            }]
+          }]
+        }]
+      }]
+    }, {
+      "componentName": "Dialog",
+      "id": "node_ocl1oej49r8f",
+      "props": {
+        "prefix": "next-",
+        "footerAlign": "right",
+        "title": "创建公司",
+        "footer": false,
+        "footerActions": ["ok", "cancel"],
+        "closeable": "esc,close",
+        "hasMask": true,
+        "align": "cc cc",
+        "minMargin": 40,
+        "isAutoContainer": true,
+        "visible": {
+          "type": "JSExpression",
+          "value": "this.state.isShowCreateDialog",
+          "mock": false
+        },
+        "style": {
+          "width": "600px"
+        },
+        "__events": {
+          "eventDataList": [{
+            "type": "componentEvent",
+            "name": "onCancel",
+            "relatedEventName": "closeShowCreateDialog"
+          }, {
+            "type": "componentEvent",
+            "name": "onClose",
+            "relatedEventName": "closeShowCreateDialog"
+          }],
+          "eventList": [{
+            "name": "onOk",
+            "disabled": false
+          }, {
+            "name": "onCancel",
+            "disabled": true
+          }, {
+            "name": "onClose",
+            "disabled": true
+          }]
+        },
+        "onCancel": {
+          "type": "JSFunction",
+          "value": "function(){this.closeShowCreateDialog.apply(this,Array.prototype.slice.call(arguments).concat([])) }"
+        },
+        "onClose": {
+          "type": "JSFunction",
+          "value": "function(){this.closeShowCreateDialog.apply(this,Array.prototype.slice.call(arguments).concat([])) }"
+        },
+        "closeMode": "close",
+        "key": "create_dialog",
+        "autoFocus": true
+      },
+      "title": "",
+      "isLocked": false,
+      "condition": {
+        "type": "JSExpression",
+        "value": "true",
+        "mock": true
+      },
+      "conditionGroup": "",
+      "children": [{
+        "componentName": "NextP",
+        "id": "node_ocl1oh6p0lsj",
+        "props": {
+          "wrap": false,
+          "type": "body2",
+          "verAlign": "middle",
+          "textSpacing": true,
+          "align": "left",
+          "full": true
+        },
+        "docId": "docl1oh6p0l",
+        "title": "段落",
+        "isLocked": false,
+        "condition": true,
+        "conditionGroup": "",
+        "children": [{
+          "componentName": "Form",
+          "id": "node_ocl1oh6p0lsk",
+          "props": {
+            "labelCol": {
+              "span": 2
+            },
+            "wrapperCol": {
+              "span": 14
+            },
+            "labelAlign": "left",
+            "size": "medium",
+            "labelTextAlign": "left",
+            "device": "desktop",
+            "isPreview": false
+          },
+          "docId": "docl1oh6p0l",
+          "title": "",
+          "isLocked": false,
+          "condition": true,
+          "conditionGroup": "",
+          "children": [{
+            "componentName": "Form.Item",
+            "id": "node_ocl1oh6p0lty",
+            "props": {
+              "label": "公司名称: ",
+              "size": "medium",
+              "labelAlign": "left",
+              "labelTextAlign": "left",
+              "device": "desktop",
+              "labelCol": {
+                "span": 4
+              },
+              "wrapperCol": {
+                "span": 18
+              }
+            },
+            "docId": "docl1oh6p0l",
+            "title": "表单项",
+            "isLocked": false,
+            "condition": true,
+            "conditionGroup": "",
+            "children": [{
+              "componentName": "Input",
+              "id": "node_ocl1oh6p0ltz",
+              "props": {
+                "hasBorder": true,
+                "size": "medium",
+                "autoComplete": "off",
+                "placeholder": "请输入",
+                "name": "name"
+              },
+              "docId": "docl1oh6p0l",
+              "title": "",
+              "isLocked": false,
+              "condition": true,
+              "conditionGroup": ""
+            }]
+          }, {
+            "componentName": "Form.Item",
+            "id": "node_ocl1oh6p0luz",
+            "props": {
+              "label": "公司别名: ",
+              "size": "medium",
+              "labelAlign": "left",
+              "labelTextAlign": "left",
+              "device": "desktop",
+              "labelCol": {
+                "span": 4
+              },
+              "wrapperCol": {
+                "span": 18
+              }
+            },
+            "docId": "docl1oh6p0l",
+            "title": "表单项",
+            "isLocked": false,
+            "condition": true,
+            "conditionGroup": "",
+            "children": [{
+              "componentName": "Input",
+              "id": "node_ocl1oh6p0lv0",
+              "props": {
+                "hasBorder": true,
+                "size": "medium",
+                "autoComplete": "off",
+                "placeholder": "请输入",
+                "name": "slug"
+              },
+              "docId": "docl1oh6p0l",
+              "title": "",
+              "isLocked": false,
+              "condition": true,
+              "conditionGroup": ""
+            }]
+          }, {
+            "componentName": "Form.Item",
+            "id": "node_ocl1oh6p0lv6",
+            "props": {
+              "label": "联系方式: ",
+              "size": "medium",
+              "labelAlign": "left",
+              "labelTextAlign": "left",
+              "device": "desktop",
+              "labelCol": {
+                "span": 4
+              },
+              "wrapperCol": {
+                "span": 18
+              }
+            },
+            "docId": "docl1oh6p0l",
+            "title": "表单项",
+            "isLocked": false,
+            "condition": true,
+            "conditionGroup": "",
+            "children": [{
+              "componentName": "Input",
+              "id": "node_ocl1oh6p0lv7",
+              "props": {
+                "hasBorder": true,
+                "size": "medium",
+                "autoComplete": "off",
+                "placeholder": "请输入",
+                "name": "phone"
+              },
+              "docId": "docl1oh6p0l",
+              "title": "",
+              "isLocked": false,
+              "condition": true,
+              "conditionGroup": ""
+            }]
+          }, {
+            "componentName": "Form.Item",
+            "id": "node_ocl1oh6p0lvd",
+            "props": {
+              "label": "公司类型: ",
+              "size": "medium",
+              "labelAlign": "left",
+              "labelTextAlign": "left",
+              "device": "desktop",
+              "labelCol": {
+                "span": 4
+              }
+            },
+            "docId": "docl1oh6p0l",
+            "title": "表单项",
+            "isLocked": false,
+            "condition": true,
+            "conditionGroup": "",
+            "children": [{
+              "componentName": "Select",
+              "id": "node_ocl1oh6p0lve",
+              "props": {
+                "mode": "single",
+                "hasArrow": true,
+                "cacheValue": true,
+                "dataSource": [{
+                  "value": "1",
+                  "label": "CUMSUMER"
+                }, {
+                  "value": "2",
+                  "label": "PRODUCER"
+                }],
+                "placeholder": "",
+                "defaultValue": "",
+                "hasClear": false,
+                "showSearch": false,
+                "name": "type"
+              },
+              "docId": "docl1oh6p0l",
+              "title": "",
+              "isLocked": false,
+              "condition": true,
+              "conditionGroup": ""
+            }]
+          }, {
+            "componentName": "Form.Item",
+            "id": "node_ocl1oh6p0lsp",
+            "props": {
+              "label": "\b",
+              "size": "medium",
+              "labelAlign": "left",
+              "labelTextAlign": "left",
+              "device": "desktop"
+            },
+            "docId": "docl1oh6p0l",
+            "title": "",
+            "isLocked": false,
+            "condition": true,
+            "conditionGroup": "",
+            "children": [{
+              "componentName": "Form.Submit",
+              "id": "node_ocl1oh6p0lsq",
+              "props": {
+                "type": "primary",
+                "validate": true,
+                "children": "提交",
+                "icon": "",
+                "size": "medium",
+                "iconSize": "xxs",
+                "ghost": true,
+                "loading": false,
+                "text": false,
+                "warning": false,
+                "htmlType": "",
+                "className": "button",
+                "style": {
+                  "opacity": 1,
+                  "backgroundColor": "#3d00ff",
+                  "float": "none"
+                },
+                "__events": {
+                  "eventDataList": [{
+                    "type": "componentEvent",
+                    "name": "onClick",
+                    "relatedEventName": "onCreate"
+                  }],
+                  "eventList": [{
+                    "name": "onClick",
+                    "description": "点击提交后触发\n@param {Object} value 数据\n@param {Object} errors 错误数据\n@param {class} field 实例",
+                    "disabled": true
+                  }, {
+                    "name": "onMouseUp",
+                    "disabled": false
+                  }]
+                },
+                "onClick": {
+                  "type": "JSFunction",
+                  "value": "function(){this.onCreate.apply(this,Array.prototype.slice.call(arguments).concat([])) }"
+                }
+              },
+              "docId": "docl1oh6p0l",
+              "title": "",
+              "isLocked": false,
+              "condition": true,
+              "conditionGroup": ""
+            }]
+          }]
+        }]
+      }]
+    }, {
+      "componentName": "NextPage",
+      "id": "node_ockzs2vw431",
+      "props": {
+        "headerDivider": true,
+        "minHeight": "100vh",
+        "presetNav": true,
+        "presetAside": true,
+        "footer": false,
+        "nav": false,
+        "aside": false,
+        "placeholderStyle": {
+          "gridRowEnd": "span 1",
+          "gridColumnEnd": "span 12"
+        },
+        "headerProps": {
+          "background": "surface"
+        },
+        "header": {
+          "type": "JSSlot",
+          "value": [{
+            "componentName": "NextPageHeader",
+            "id": "node_ockzs2vw433",
+            "props": {
+              "style": {
+                "background": "#ffffff",
+                "padding": ""
+              }
+            },
+            "title": "页面头部",
+            "isLocked": false,
+            "condition": true,
+            "conditionGroup": "",
+            "children": [{
+              "componentName": "NextRowColContainer",
+              "id": "node_ockzs2vw434",
+              "props": {
+                "rowGap": 20,
+                "colGap": 20
+              },
+              "title": "行列容器",
+              "isLocked": false,
+              "condition": true,
+              "conditionGroup": "",
+              "children": [{
+                "componentName": "NextRow",
+                "id": "node_ockzs2vw435",
+                "props": {},
+                "title": "行",
+                "isLocked": false,
+                "condition": true,
+                "conditionGroup": ""
+              }]
+            }]
+          }],
+          "title": "header"
+        },
+        "isTab": false,
+        "contentAlignCenter": false,
+        "contentProps": {
+          "style": {
+            "background": "rgba(255,255,255,0)"
+          }
+        }
+      },
+      "title": "页面",
+      "isLocked": false,
+      "condition": true,
+      "conditionGroup": "",
+      "children": [{
+        "componentName": "NextBlock",
+        "id": "node_ocl1oyks4w12",
+        "props": {
+          "placeholderStyle": {
+            "height": "100%"
+          },
+          "noPadding": false,
+          "noBorder": false,
+          "title": "区域标题",
+          "rowGap": 20,
+          "colGap": 20,
+          "background": "surface",
+          "layoutmode": "O",
+          "strict": true,
+          "colSpan": 12,
+          "rowSpan": 1,
+          "mode": "transparent",
+          "childTotalColumns": 12
+        },
+        "title": "区域",
+        "isLocked": false,
+        "condition": true,
+        "conditionGroup": "",
+        "children": [{
+          "componentName": "NextBlockCell",
+          "id": "node_ocl1oyks4w13",
+          "props": {
+            "colSpan": 12,
+            "rowSpan": 1,
+            "mode": "procard",
+            "isAutoContainer": true,
+            "title": "公司列表",
+            "hasDivider": true,
+            "loading": false,
+            "bodyPadding": "",
+            "hasCollapse": false,
+            "text": true,
+            "visibleButtonCount": 3,
+            "operationConfig": {
+              "align": "center"
+            },
+            "operations": []
+          },
+          "title": "",
+          "isLocked": false,
+          "condition": true,
+          "conditionGroup": "",
+          "children": [{
+            "componentName": "NextP",
+            "id": "node_ocl1pvuuco19",
+            "props": {
+              "wrap": false,
+              "type": "body2",
+              "verAlign": "middle",
+              "textSpacing": true,
+              "align": "left"
+            },
+            "docId": "docl1pvuuco",
+            "title": "段落",
+            "isLocked": false,
+            "condition": true,
+            "conditionGroup": "",
+            "children": [{
+              "componentName": "NextRowColContainer",
+              "id": "node_ocl1pvuuco1a",
+              "props": {
+                "rowGap": 20,
+                "colGap": 20
+              },
+              "docId": "docl1pvuuco",
+              "title": "行列容器",
+              "isLocked": false,
+              "condition": true,
+              "conditionGroup": "",
+              "children": [{
+                "componentName": "NextRow",
+                "id": "node_ocl1pvuuco1b",
+                "props": {},
+                "docId": "docl1pvuuco",
+                "title": "行",
+                "isLocked": false,
+                "condition": true,
+                "conditionGroup": "",
+                "children": [{
+                  "componentName": "NextCol",
+                  "id": "node_ocl1pvuuco1c",
+                  "props": {
+                    "colSpan": 1,
+                    "justifyContent": "flex-start"
+                  },
+                  "docId": "docl1pvuuco",
+                  "title": "列",
+                  "isLocked": false,
+                  "condition": true,
+                  "conditionGroup": "",
+                  "children": [{
+                    "componentName": "NextP",
+                    "id": "node_ocl1pvuuco1g",
+                    "props": {
+                      "wrap": false,
+                      "type": "body2",
+                      "verAlign": "middle",
+                      "textSpacing": true,
+                      "align": "left"
+                    },
+                    "docId": "docl1pvuuco",
+                    "title": "段落",
+                    "isLocked": false,
+                    "condition": true,
+                    "conditionGroup": "",
+                    "children": [{
+                      "componentName": "Search",
+                      "id": "node_ocl1pvuuco5s",
+                      "props": {
+                        "followTrigger": true,
+                        "searchText": "搜索公司",
+                        "prefix": "next-",
+                        "shape": "normal",
+                        "type": "normal",
+                        "size": "medium",
+                        "hasIcon": true,
+                        "hasClear": false,
+                        "disabled": false,
+                        "__events": {
+                          "eventDataList": [{
+                            "type": "componentEvent",
+                            "name": "onSearch",
+                            "relatedEventName": "search"
+                          }],
+                          "eventList": [{
+                            "name": "onChange",
+                            "disabled": false
+                          }, {
+                            "name": "onSearch",
+                            "disabled": true
+                          }, {
+                            "name": "onFilterChange",
+                            "disabled": false
+                          }]
+                        },
+                        "onSearch": {
+                          "type": "JSFunction",
+                          "value": "function(){this.search.apply(this,Array.prototype.slice.call(arguments).concat([])) }"
+                        }
+                      },
+                      "title": "",
+                      "isLocked": false,
+                      "condition": true,
+                      "conditionGroup": ""
+                    }]
+                  }]
+                }]
+              }]
+            }]
+          }, {
+            "componentName": "NextRowColContainer",
+            "id": "node_ocl1oyks4w14",
+            "props": {
+              "rowGap": 20,
+              "colGap": 20
+            },
+            "title": "行列容器",
+            "isLocked": false,
+            "condition": true,
+            "conditionGroup": "",
+            "children": [{
+              "componentName": "NextRow",
+              "id": "node_ocl1oyks4w15",
+              "props": {},
+              "title": "行",
+              "isLocked": false,
+              "condition": true,
+              "conditionGroup": "",
+              "children": [{
+                "componentName": "NextCol",
+                "id": "node_ocl1oyks4w16",
+                "props": {
+                  "colSpan": 1
+                },
+                "title": "列",
+                "isLocked": false,
+                "condition": true,
+                "conditionGroup": "",
+                "children": [{
+                  "componentName": "NextP",
+                  "id": "node_ocl1oyks4w17",
+                  "props": {
+                    "wrap": false,
+                    "type": "body2",
+                    "verAlign": "middle",
+                    "textSpacing": true,
+                    "align": "left",
+                    "full": true
+                  },
+                  "title": "段落",
+                  "isLocked": false,
+                  "condition": true,
+                  "conditionGroup": "",
+                  "children": [{
+                    "componentName": "NextTable",
+                    "id": "node_ocl1oyks4w18",
+                    "props": {
+                      "setEmptyContent": true,
+                      "emptyContent": {
+                        "type": "JSSlot",
+                        "value": [{
+                          "componentName": "Slot",
+                          "id": "node_ocl1oyks4w1c",
+                          "props": {},
+                          "docId": "docl1oyks4w",
+                          "title": "EmptyContent",
+                          "isLocked": false,
+                          "condition": true,
+                          "conditionGroup": "",
+                          "children": [{
+                            "componentName": "Typography.Text",
+                            "id": "node_ocl1oyks4w1d",
+                            "props": {
+                              "children": "No Data"
+                            },
+                            "docId": "docl1oyks4w",
+                            "title": "",
+                            "isLocked": false,
+                            "condition": true,
+                            "conditionGroup": ""
+                          }]
+                        }]
+                      },
+                      "showMiniPager": false,
+                      "showActionBar": true,
+                      "actionBar": [{
+                        "title": "创建公司",
+                        "callback": {
+                          "type": "JSFunction",
+                          "value": "function(){ return this.openShowCreateDialog.apply(this,Array.prototype.slice.call(arguments).concat([])) }"
+                        }
+                      }],
+                      "columns": [{
+                        "dataKey": "name",
+                        "width": 200,
+                        "align": "center",
+                        "title": "公司名称",
+                        "editType": "text",
+                        "dataType": "text",
+                        "lock": "",
+                        "render": {
+                          "type": "JSSlot",
+                          "params": [""],
+                          "value": [{
+                            "componentName": "Box",
+                            "id": "node_ocl1oyks4w1f",
+                            "props": {},
+                            "title": "",
+                            "isLocked": false,
+                            "condition": true,
+                            "conditionGroup": ""
+                          }]
+                        }
+                      }, {
+                        "dataKey": "slug",
+                        "width": 200,
+                        "align": "center",
+                        "title": "公司别名",
+                        "dataType": "text",
+                        "editType": "text",
+                        "lock": "",
+                        "render": {
+                          "type": "JSSlot",
+                          "params": [""],
+                          "value": [{
+                            "componentName": "Box",
+                            "id": "node_ocl1oyks4w1i",
+                            "props": {},
+                            "title": "",
+                            "isLocked": false,
+                            "condition": true,
+                            "conditionGroup": ""
+                          }]
+                        }
+                      }, {
+                        "dataKey": "type",
+                        "width": 200,
+                        "align": "center",
+                        "title": "公司类型",
+                        "dataType": "text",
+                        "editType": "text",
+                        "lock": "",
+                        "render": {
+                          "type": "JSSlot",
+                          "params": [""],
+                          "value": [{
+                            "componentName": "Box",
+                            "id": "node_ocl1oyks4w1p",
+                            "props": {},
+                            "title": "",
+                            "isLocked": false,
+                            "condition": true,
+                            "conditionGroup": ""
+                          }]
+                        }
+                      }, {
+                        "title": "联系方式",
+                        "dataKey": "phone",
+                        "dataType": "text",
+                        "editType": "text",
+                        "width": 200,
+                        "lock": "",
+                        "render": {
+                          "type": "JSSlot",
+                          "params": [""],
+                          "value": [{
+                            "componentName": "Box",
+                            "id": "node_ocl1oyks4w1u",
+                            "props": {},
+                            "title": "",
+                            "isLocked": false,
+                            "condition": true,
+                            "conditionGroup": ""
+                          }]
+                        }
+                      }, {
+                        "title": "注册时间",
+                        "dataKey": "createTime",
+                        "dataType": "timestamp",
+                        "editType": "text",
+                        "width": 200,
+                        "lock": "",
+                        "render": {
+                          "type": "JSSlot",
+                          "params": [""],
+                          "value": [{
+                            "componentName": "Box",
+                            "id": "node_ocl1oyks4w2q",
+                            "props": {},
+                            "title": "",
+                            "isLocked": false,
+                            "condition": true,
+                            "conditionGroup": ""
+                          }]
+                        }
+                      }, {
+                        "title": "状态",
+                        "dataKey": "status",
+                        "dataType": "text",
+                        "editType": "text",
+                        "width": 200,
+                        "lock": "",
+                        "render": {
+                          "type": "JSSlot",
+                          "params": [""],
+                          "value": [{
+                            "componentName": "Box",
+                            "id": "node_ocl1oyks4w27",
+                            "props": {},
+                            "title": "",
+                            "isLocked": false,
+                            "condition": true,
+                            "conditionGroup": ""
+                          }]
+                        }
+                      }],
+                      "data": {
+                        "type": "JSExpression",
+                        "value": "this.state.info",
+                        "mock": [{
+                          "name": "王小",
+                          "id": "1",
+                          "age": 15000,
+                          "role": "开发"
+                        }, {
+                          "name": "王中",
+                          "id": "2",
+                          "age": 25000,
+                          "role": "产品"
+                        }, {
+                          "name": "王大",
+                          "id": "3",
+                          "age": 35000,
+                          "role": "设计"
+                        }]
+                      },
+                      "actionTitle": "操作",
+                      "actionWidth": 180,
+                      "actionType": "button",
+                      "actionFixed": "right",
+                      "actionHidden": false,
+                      "maxWebShownActionCount": 2,
+                      "actionColumn": [{
+                        "title": "编辑",
+                        "callback": {
+                          "type": "JSFunction",
+                          "value": "function(){ return this.openShowUpdateDialog.apply(this,Array.prototype.slice.call(arguments).concat([])) }"
+                        }
+                      }, {
+                        "title": "Title",
+                        "callback": {
+                          "type": "JSFunction",
+                          "value": "function(){ return this.search.apply(this,Array.prototype.slice.call(arguments).concat([])) }"
+                        }
+                      }],
+                      "customBarItem": {
+                        "rightRender": {
+                          "type": "JSSlot",
+                          "params": ["value", "index", "record"],
+                          "value": [{
+                            "componentName": "Tag",
+                            "id": "node_ocl1pvu2463i",
+                            "props": {
+                              "prefix": "next-",
+                              "type": "normal",
+                              "size": "large",
+                              "animation": false,
+                              "children": {
+                                "type": "JSExpression",
+                                "value": "this.state.total +\" 条结果\"",
+                                "mock": ["Tag"]
+                              }
+                            },
+                            "title": "",
+                            "isLocked": false,
+                            "condition": true,
+                            "conditionGroup": ""
+                          }]
+                        },
+                        "bottomRender": ""
+                      },
+                      "linkBar": [],
+                      "pagination": {
+                        "type": "simple",
+                        "shape": "arrow-only",
+                        "pageSize": 10,
+                        "pageSizeSelector": false,
+                        "pageSizeList": "10",
+                        "pageSizePosition": "end",
+                        "paginationPosition": "right",
+                        "hideOnlyOnePage": false,
+                        "showJump": true,
+                        "size": "small",
+                        "pageShowCount": 10
+                      },
+                      "isPagination": false,
+                      "showLinkBar": false,
+                      "showSearch": false,
+                      "searchBarPlaceholder": "公司名称",
+                      "showCustomColumn": false,
+                      "showRowSelector": false,
+                      "theme": "zebra",
+                      "hasHeader": true,
+                      "fixedHeader": false,
+                      "stickyHeader": false,
+                      "hasExpandedRowCtrl": false,
+                      "isTree": false
+                    },
+                    "docId": "docl1oyks4w",
+                    "title": "表格",
+                    "isLocked": false,
+                    "condition": true,
+                    "conditionGroup": ""
+                  }, {
+                    "componentName": "Pagination",
+                    "id": "node_ocl1pvu24641",
+                    "props": {
+                      "prefix": "next-",
+                      "type": "normal",
+                      "shape": "normal",
+                      "size": "medium",
+                      "defaultCurrent": 1,
+                      "total": {
+                        "type": "JSExpression",
+                        "value": "this.state.total",
+                        "mock": 100
+                      },
+                      "pageShowCount": 10,
+                      "pageSize": 10,
+                      "pageSizePosition": "start",
+                      "showJump": true,
+                      "pageSizeSelector": false,
+                      "hideOnlyOnePage": false,
+                      "link": "",
+                      "style": {
+                        "textAlign": "right"
+                      },
+                      "__events": {
+                        "eventDataList": [{
+                          "type": "componentEvent",
+                          "name": "onChange",
+                          "relatedEventName": "refetch"
+                        }],
+                        "eventList": [{
+                          "name": "onChange",
+                          "description": "页码发生改变时的回调函数\n@param {Number} current 改变后的页码数\n@param {Object} e 点击事件对象",
+                          "disabled": true
+                        }, {
+                          "name": "onPageSizeChange",
+                          "description": "每页显示记录数量改变时的回调函数\n@param {Number} pageSize 改变后的每页显示记录数",
+                          "disabled": false
+                        }]
+                      },
+                      "onChange": {
+                        "type": "JSFunction",
+                        "value": "function(){this.refetch.apply(this,Array.prototype.slice.call(arguments).concat([])) }"
+                      }
+                    },
+                    "docId": "docl1pvu246",
+                    "title": "",
+                    "isLocked": false,
+                    "condition": true,
+                    "conditionGroup": ""
+                  }]
+                }]
+              }]
+            }]
+          }]
+        }]
+      }, {
+        "componentName": "NextBlock",
+        "id": "node_ocl1gdto03w",
+        "props": {
+          "placeholderStyle": {
+            "height": "100%"
+          },
+          "noPadding": false,
+          "noBorder": false,
+          "title": "",
+          "rowGap": 20,
+          "colGap": 20,
+          "background": "surface",
+          "layoutmode": "O",
+          "strict": true,
+          "colSpan": 12,
+          "rowSpan": 1,
+          "mode": "transparent",
+          "childTotalColumns": 12
+        },
+        "title": "区域",
+        "isLocked": false,
+        "condition": true,
+        "conditionGroup": "",
+        "children": [{
+          "componentName": "NextBlockCell",
+          "id": "node_ocl1gdto03x",
+          "props": {
+            "colSpan": 12,
+            "rowSpan": 1,
+            "mode": "procard",
+            "isAutoContainer": true,
+            "title": "公司列表",
+            "hasDivider": true,
+            "loading": false,
+            "bodyPadding": "",
+            "hasCollapse": false,
+            "text": true,
+            "visibleButtonCount": 3,
+            "operationConfig": {
+              "align": "center"
+            },
+            "operations": [],
+            "explanation": ""
+          },
+          "title": "",
+          "isLocked": false,
+          "condition": true,
+          "conditionGroup": "",
+          "children": [{
+            "componentName": "NextRowColContainer",
+            "id": "node_ocl1gdto03y",
+            "props": {
+              "rowGap": 20,
+              "colGap": 20
+            },
+            "title": "行列容器",
+            "isLocked": false,
+            "condition": true,
+            "conditionGroup": "",
+            "children": [{
+              "componentName": "NextRow",
+              "id": "node_ocl1gdto03z",
+              "props": {},
+              "title": "行",
+              "isLocked": false,
+              "condition": true,
+              "conditionGroup": "",
+              "children": [{
+                "componentName": "NextCol",
+                "id": "node_ocl1gdto0310",
+                "props": {
+                  "colSpan": 1,
+                  "justifyContent": "flex-start"
+                },
+                "title": "列",
+                "isLocked": false,
+                "condition": true,
+                "conditionGroup": "",
+                "children": [{
+                  "componentName": "NextP",
+                  "id": "node_ocl1gdto0311",
+                  "props": {
+                    "wrap": false,
+                    "type": "body2",
+                    "verAlign": "middle",
+                    "textSpacing": true,
+                    "align": "left"
+                  },
+                  "title": "段落",
+                  "isLocked": false,
+                  "condition": true,
+                  "conditionGroup": "",
+                  "children": [{
+                    "componentName": "ProTable",
+                    "id": "node_ocl1gdto0312",
+                    "props": {
+                      "dataSource": {
+                        "type": "JSExpression",
+                        "value": "this.state.info"
+                      },
+                      "actionColumnButtons": {
+                        "text": false,
+                        "dataSource": [{
+                          "children": "编辑",
+                          "type": "primary",
+                          "onClick": {
+                            "type": "JSFunction",
+                            "value": "function(){ return this.openShowUpdateDialog.apply(this,Array.prototype.slice.call(arguments).concat([])) }"
+                          },
+                          "disabled": false
+                        }],
+                        "visibleButtonCount": 3
+                      },
+                      "actionBarButtons": {
+                        "dataSource": [{
+                          "type": "primary",
+                          "children": "创建公司",
+                          "onClick": {
+                            "type": "JSFunction",
+                            "value": "function(){ return this.openShowCreateDialog.apply(this,Array.prototype.slice.call(arguments).concat([])) }"
+                          }
+                        }],
+                        "visibleButtonCount": 1,
+                        "text": false
+                      },
+                      "paginationProps": {
+                        "hidden": true
+                      },
+                      "settingButtons": false,
+                      "columns": [{
+                        "title": "公司名称",
+                        "dataIndex": "name",
+                        "width": 160,
+                        "formatType": "text",
+                        "searchable": true
+                      }, {
+                        "title": "公司别名",
+                        "formatType": "text",
+                        "dataIndex": "slug"
+                      }, {
+                        "title": "联系方式",
+                        "formatType": "text",
+                        "dataIndex": "phone"
+                      }, {
+                        "title": "公司类型",
+                        "formatType": "text",
+                        "dataIndex": "type"
+                      }, {
+                        "title": "注册日期",
+                        "formatType": "text",
+                        "dataIndex": "createTime",
+                        "_format_options_date": "YYYY-MM-DD HH:mm:ss"
+                      }, {
+                        "title": "状态",
+                        "formatType": "text",
+                        "dataIndex": "status"
+                      }],
+                      "actionColumnProps": {
+                        "title": "操作",
+                        "width": 120
+                      },
+                      "indexColumn": false,
+                      "hasBorder": false,
+                      "isZebra": false,
+                      "fixedHeader": false,
+                      "size": "medium"
+                    },
+                    "docId": "docl1gdto03",
+                    "title": "",
+                    "isLocked": false,
+                    "condition": {
+                      "type": "JSExpression",
+                      "value": "true",
+                      "mock": true
+                    },
+                    "conditionGroup": ""
+                  }]
+                }]
+              }]
+            }]
+          }]
+        }]
+      }]
+    }]
+  }],
+  "i18n": {}
+}

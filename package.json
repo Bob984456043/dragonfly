@@ -5,11 +5,19 @@
   "dependencies": {
     "@ant-design/icons": "^4.0.2",
     "@ant-design/pro-layout": "^6.5.1",
+    "@ant-design/pro-table": "^2.71.7",
+    "@ant-design/pro-form": "^1.64.1",
     "antd": "^4.0.0",
     "moment": "^2.24.0",
     "prop-types": "^15.5.8",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "@alilc/lowcode-react-renderer": "^1.0.0",
+    "@alilc/lowcode-utils": "^1.0.0",
+    "@alib/build-scripts": "^0.1.18",
+    "@alilc/lowcode-engine": "^1.0.0",
+    "@alilc/lowcode-engine-ext": "^1.0.0",
+    "@alilc/lowcode-types": "^1.0.0"
   },
   "devDependencies": {
     "@iceworks/spec": "^1.0.1",

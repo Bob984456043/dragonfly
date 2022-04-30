@@ -5,7 +5,7 @@ const appConfig: IAppConfig = {
     rootId: 'ice-container',
   },
   router: {
-    type: 'hash',
+    type: 'browser',
   },
 };
 
