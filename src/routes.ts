@@ -1,7 +1,7 @@
 import { IRouterConfig, lazy } from 'ice';
 import Layout from '@/Layouts/BasicLayout';
 
-const Home = lazy(() => import('@/pages/Home'));
+const Editor = lazy(() => import('@/pages/Editor'));
 const NotFound = lazy(() => import('@/components/NotFound'));
 const Render = lazy(() => import('@/pages/Render'));
 const PageList = lazy(() => import('@/pages/PageList'));
@@ -18,8 +18,8 @@ const routerConfig: IRouterConfig[] = [
       component: PageList,
     }, {
       path: '/',
-      exact: true,
-      component: PageList,
+      //exact: true,
+      component: Editor,
     }, {
       component: NotFound,
     }],
